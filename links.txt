@@ -1,0 +1,31 @@
+CONTACT ICONS
+<i class="fas fa-phone-alt"></i>
+<i class="fas fa-envelope"></i>
+
+SOCIAL ICONS
+<i class="fab fa-facebook-square"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-youtube"></i>
+<i class="fab fa-linkedin-in"></i>
+<i class="fab fa-whatsapp"></i>
+
+NAVBAR ICONS
+<i class="fas fa-shopping-cart"></i>
+<i class="fas fa-search"></i>
+
+FEATURES ICONS
+QUALITY | <i class="fas fa-award"></i>
+INNOVATION | <i class="far fa-lightbulb"></i>
+SAFETY | <i class="far fa-life-ring"></i>
+SUSTAINABILITY | <i class="far fa-thumbs-up"></i>
+PARTNERS | <i class="far fa-handshake"></i>
+STAFF | <i class="far fa-user"></i> *
+
+
+BOTOM GRID
+<i class="far fa-building"></i>
+<i class="fas fa-cubes"></i>
+<i class="far fa-eye"></i>
+
+

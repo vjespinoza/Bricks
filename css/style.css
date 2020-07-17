@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+/* UTILITIES */
+
+.u-case {
+  text-transform: uppercase;
+}
+
+.fw300 {
+  font-weight: 300;
+}
+
+.fw400 {
+  font-weight: 400;
+}
+
+.fw600 {
+  font-weight: 600;
+}
