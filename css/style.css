@@ -303,19 +303,18 @@ img {
 }
 
 .site_nav-menu:after {
-	content: "\f0c9";
-	display: block;
-	width: 4rem;
-	height: 4rem;
-	font-family: FontAwesome;
-	font-style: normal;
-	text-decoration: inherit;
-	color: white;
-
-	font-size: 3rem;
+	content: "better use html method";
+	display: inline-block;
+	width: 2.5rem;
+	height: 2.5rem;
 	position: absolute;
-	right: 0;
-	/* background-image: url(""); */
+	top: 20%;
+	right: -4rem;
+	background-image: url("../img/bars.svg");
+	filter: brightness(100%);
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer;
 }
 
 .logo {
