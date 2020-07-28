@@ -2,7 +2,7 @@
 	--greyDark: #373333;
 	--greyLight: #787070;
 	--yellowDark: #ffb13c;
-	--yellowLight: #ffc164;
+	--yellowLight: #fdba54;
 
 	--font-h: "Open Sans", sans-serif;
 	--font-p: "Merriweather", sans-serif;
@@ -81,11 +81,15 @@ img {
 	background-color: var(--yellowDark);
 	padding: 1rem 2rem;
 	color: #ffffff;
-	text-transform: var(--u-case);
+	text-transform: uppercase;
 	text-decoration: none;
-	font-weight: var(--fw600);
+	font-weight: 600;
 	cursor: pointer;
 	text-align: center;
+}
+
+.btn:hover {
+	background-color: var(--yellowLight);
 }
 
 @media (min-width: 768px) {
@@ -243,7 +247,7 @@ img {
 }
 
 .site_nav-menu label {
-	color: #ffffff;
+	color: var(--yellowDark);
 	font-size: 2rem;
 	margin: 0;
 }
@@ -259,13 +263,16 @@ img {
 .menu_list {
 	padding-left: 0;
 	list-style: none;
-	background-color: yellow;
+	background-color: #ffffff;
 	position: absolute;
 	top: 4rem;
-	left: 95vw;
-	width: 0;
+	left: 30%;
+	width: 68vw;
 	padding: 4rem 0;
 	transition: ease 0.5s;
+	-webkit-box-shadow: -7px 7px 10px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: -7px 7px 10px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: -7px 7px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .menu_list li {
@@ -277,23 +284,28 @@ img {
 	color: var(--greyDark);
 	text-transform: uppercase;
 	text-decoration: none;
-	font-size: 0;
-	font-weight: 500;
-	padding: 0;
-}
-
-#toggle:checked ~ .menu_list {
-	left: 30%;
-	width: 68vw;
-}
-
-#toggle:checked ~ .menu_list a {
 	font-size: 1.4rem;
+	font-weight: 500;
 	padding: 1rem 0 1rem 2rem;
 }
 
+.menu_list a:hover {
+	background-color: var(--yellowDark);
+}
+
+#toggle:checked ~ .menu_list {
+	left: 95vw;
+	width: 0;
+}
+
+#toggle:checked ~ .menu_list a {
+	font-size: 0;
+	padding: 0;
+	transition-delay: 0.5s;
+}
+
 #toggle:checked + label i {
-	color: var(--yellowDark);
+	color: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -316,6 +328,9 @@ img {
 		background-color: transparent;
 		padding: 0;
 		width: 100%;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
 	}
 
 	.site_nav-menu .menu_list li {
@@ -331,6 +346,7 @@ img {
 	.site_nav-menu .menu_list a:hover {
 		border: 1px solid #ffffff;
 		padding: 0.5rem 1.5rem;
+		background-color: transparent;
 	}
 }
 
@@ -407,3 +423,5 @@ img {
 	margin: 3rem 0;
 	max-width: 70rem;
 }
+
+/* PORTFOLIO SECTION */
