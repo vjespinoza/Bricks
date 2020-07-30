@@ -110,6 +110,10 @@ img {
 	text-transform: uppercase;
 }
 
+.fw600 {
+	font-weight: 600;
+}
+
 /* SITE HEADER */
 
 .site_header {
@@ -482,4 +486,68 @@ img {
 
 .card-text {
 	font-size: 1.3rem;
+}
+
+/* FEATURES SECTION */
+
+.site_features {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+		url("../img/features-section-BG.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+
+.site_features-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: #ffffff;
+	padding: 5rem 0;
+	text-align: center;
+	position: relative;
+}
+
+.site_features-cards:after {
+	content: "";
+	display: block;
+	height: 1px;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.features_card {
+	display: flex;
+	flex-direction: column;
+	width: 30rem;
+	padding: 3rem 5rem;
+	flex: 1 0 auto;
+}
+
+@media (min-width: 1080px) {
+	.features_card {
+		display: flex;
+		flex-direction: column;
+		width: 30rem;
+		padding: 3rem 1rem;
+		flex: 1 0 33.33%;
+	}
+}
+
+.features_card-icon {
+	color: var(--yellowDark);
+	font-size: 3rem;
+	line-height: 1;
+	margin-bottom: 1rem;
+}
+
+.features_card-title {
+	margin-bottom: 2.5rem;
+}
+
+.features_card-text {
+	font-size: 1.4rem;
 }
