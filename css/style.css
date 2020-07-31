@@ -503,20 +503,67 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-content: center;
 	color: #ffffff;
 	padding: 5rem 0;
 	text-align: center;
 	position: relative;
 }
 
-.site_features-cards:after {
-	content: "";
-	display: block;
-	height: 1px;
-	width: 100%;
-	position: absolute;
-	top: 50%;
-	background-color: rgba(255, 255, 255, 0.5);
+.features_card {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.features_card:last-of-type {
+	border-bottom: 0;
+}
+
+@media screen and (min-width: 679px) and (max-width: 1011px) {
+	.features_card {
+		border-bottom: 0;
+	}
+
+	.site_features-cards:after {
+		content: "";
+		height: 33.33%;
+		width: 100%;
+		position: absolute;
+		border-top: 1px solid rgba(255, 255, 255, 0.5);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	}
+
+	.site_features-cards:before {
+		content: "";
+		height: 90%;
+		width: 1px;
+		position: absolute;
+		left: 50%;
+		background-color: rgba(255, 255, 255, 0.5);
+	}
+}
+
+@media (min-width: 1012px) {
+	.features_card {
+		border-bottom: 0;
+	}
+
+	.site_features-cards:after {
+		content: "";
+		height: 1px;
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		background-color: rgba(255, 255, 255, 0.5);
+	}
+
+	.site_features-cards:before {
+		content: "";
+		height: 80%;
+		width: 33.33%;
+		position: absolute;
+		border-left: 1px solid rgba(255, 255, 255, 0.5);
+		border-right: 1px solid rgba(255, 255, 255, 0.5);
+	}
 }
 
 .features_card {
@@ -550,4 +597,140 @@ img {
 
 .features_card-text {
 	font-size: 1.4rem;
+}
+
+/* PROMISE OF VALUE - WHAT MAKES US DIFFERENT SECTION */
+
+.corp_value {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.value_img-left {
+	display: flex;
+	background-image: url("../img/different-section-left.jpg");
+	background-size: cover;
+	background-position: center center;
+	width: 50%;
+	height: 50rem;
+	flex: 1 1 100%;
+}
+
+.value_content-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 50%;
+	height: 50rem;
+	padding: 0 4rem;
+	flex: 1 1 100%;
+}
+
+@media (min-width: 768px) {
+	.value_img-left,
+	.value_content-right {
+		flex: 1 1 50%;
+	}
+}
+
+.value_content-title {
+	margin: 1rem 0 3rem 0;
+}
+
+/* BOTTOM FEATURES */
+
+.bottom_features {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+	.bottom_features {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+.bottom_features-card {
+	color: #ffffff;
+	padding: 4rem 2rem;
+	text-align: center;
+	background-size: cover;
+	background-position: center center;
+}
+
+@media (min-width: 768px) {
+	.bottom_features-card {
+		flex: 1 1 33.33%;
+		padding: 6rem;
+	}
+}
+
+.card_BG-1 {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
+		url("../img/bottom_card1.jpg");
+}
+
+.card_BG-2 {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
+		url("../img/bottom_card2.jpg");
+}
+
+.card_BG-3 {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
+		url("../img/bottom_card3.jpg");
+}
+
+.bottom_features-card-icon {
+	color: var(--yellowDark);
+	font-size: 3rem;
+	line-height: 1;
+}
+
+.bottom_features-card-title {
+	font-size: 1.4rem;
+	margin: 1rem 0 2rem 0;
+}
+
+.bottom_features-card-text {
+	font-size: 1.2rem;
+}
+
+/*  SITE CONTACT SECTION */
+
+.site_contact {
+	text-align: center;
+	padding: 5rem 0;
+}
+
+.site_contact-clients {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+	margin: 0 auto 5rem auto;
+}
+
+.client_logo {
+	height: 3rem;
+	width: 100%;
+	margin: 3rem 0;
+}
+
+@media (min-width: 768px) {
+	.client_logo {
+		height: 100%;
+		max-width: 15rem;
+		margin-right: 4rem;
+	}
+
+	.client_logo:last-of-type {
+		margin-right: 0;
+	}
+}
+
+.contact_slogan {
+	margin-bottom: 3rem;
 }
