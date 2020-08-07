@@ -294,6 +294,7 @@ label.push-toggle {
   #slider figure img {
     float: left;
     width: 20%;
+    filter: brightness(30%);
   }
 
   @keyframes slider {
@@ -329,15 +330,6 @@ label.push-toggle {
     }
   }
 
-  .slider_filter {
-    display: block;
-    position: absolute;
-    top: 0;
-    z-index: 15;
-    width: 500%;
-    height: 100rem;
-    background-image: linear-gradient(to left, rgba(0,0,0,0.7),rgba(0,0,0,0.7));
-  }
 }
 
 /* SITE HEADER == SITE NAV */
