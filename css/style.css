@@ -243,19 +243,6 @@ label.push-toggle {
   position: fixed;
 }
 
-/* #push-toggle:checked ~ .hide_scrolled_content {
-	display: block;
-	width: 100%;
-	height: 10rem;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 60;
-	background-color: #ffffff;
-	transform: scale(1);
-	transition-delay: 0.5s;
-} */
-
 /* SITE HEADER */
 
 .site_header {
@@ -272,6 +259,87 @@ label.push-toggle {
   width: 100%;
 }
 
+@media (min-width: 1000px) {
+  .site_header {
+    width: 100%;
+    background-image: none;
+    min-height: unset;
+    height: 100%;
+  }
+}
+
+/* SITE HEADER - IMAGE SLIDER */
+
+#slider figure {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  #slider {
+    display: block;
+    overflow: hidden;
+  }
+
+  #slider figure {
+    display: block;
+    position: relative;
+    width: 500%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    animation: 20s slider infinite;
+    z-index: 10;
+  }
+
+  #slider figure img {
+    float: left;
+    width: 20%;
+  }
+
+  @keyframes slider {
+    0% {
+      left: 0;
+    }
+    10% {
+      left: 0;
+    }
+    15% {
+      left: -100%;
+    }
+    35% {
+      left: -100%;
+    }
+    40% {
+      left: -200%;
+    }
+    60% {
+      left: -200%;
+    }
+    65% {
+      left: -300%;
+    }
+    85% {
+      left: -300%;
+    }
+    90% {
+      left: -400%;
+    }
+    100% {
+      left: -400%;
+    }
+  }
+
+  .slider_filter {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 15;
+    width: 500%;
+    height: 100rem;
+    background-image: linear-gradient(to left, rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+  }
+}
+
 /* SITE HEADER == SITE NAV */
 
 .site_nav {
@@ -279,6 +347,15 @@ label.push-toggle {
   width: 100%;
   height: 10rem;
   position: relative;
+}
+
+@media (min-width: 1000px) {
+  .site_nav {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+  }
 }
 
 .site_nav:after {
@@ -569,8 +646,23 @@ label.push-toggle {
 .center_content {
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
 }
+
+@media (min-width: 1000px) {
+  .center_content {
+    display: flex;
+    position: absolute;
+    z-index: 30;
+    height: 50vh;
+    top: calc(50vh - 5%);
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+
 
 .site_header-content {
   display: flex;
