@@ -655,7 +655,7 @@ label.push-toggle {
 .site_header-content p {
   margin: 1rem 0;
   max-width: 70rem;
-  font-size: clamp(1.6rem, 1vw, 2rem);
+  font-size: clamp(1.4rem, 1vw, 1.8rem);
 }
 
 @media (min-width: 1000px) {
